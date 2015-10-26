@@ -17,7 +17,9 @@ After completing this tutorial, you will be able to:
 
 To install Flask, we would be needing to 3 things:
 1. Python 3 - a widely used general-purpose, high-level programming language.
+
 2. pip - a tool that's used to manage packages written in Python
+
 3. Virtual Environment (Virtualenv)- allows us to create Python environments that are isolated from one another. We will now create our own
 virtual environment for a simple web app and install Flask in it.
 

@@ -13,6 +13,8 @@ After completing this tutorial, you will be able to:
 * Number 2
 * Number 3
 
+This guide is based directly from the awesome and concise guides provided by [Flask Documentation](http://flask.pocoo.org/docs/0.10/) and [Miguel Grinberg](http://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world). These guides have been merged and modified for UP CSI Devcamp 2015.
+
 ## Installing Flask
 
 To install Flask, we would be needing to 3 things:
@@ -61,6 +63,7 @@ sudo pip3 install flask
 
 And we're done! Let's proceed to our First Web App in Flask!
 
+
 For Windows
 ===
 One main difference between Windows from Unix-based OS is that you need to edit your system environment variables in order to run python in the command prompt.
@@ -81,6 +84,7 @@ Luckily, both the (1) system environment variables can already be updated and (2
   e. In Advanced Options, tick the checkbox `Add Python to environment variables`. Click `Install`
 
 2. Pip Installation
+
   If you did Step 1, then you don't need to do this.
 
   Else if you have installed Python before but didn't decide to install pip, then do the following:
@@ -91,7 +95,6 @@ python -m easy_install pip
 ```
   The command above makes use of easy_install, a primitive package manager (same as pip) that is installed automatically when you install python.
 
-
 3. Installing Virtualenv
 
   In your command line, enter:
@@ -99,6 +102,31 @@ python -m easy_install pip
 python -m pip install virtualenv
 ```
 
+4. Setup application folder
+  Type these on the command line in order to make the virtual environment:
+```
+mkdir my_app
+cd my_app
+virtualenv venv
+```
+  (note: the name my_app can be substituted with anything)
+
+  Now, whenever you want to work on a project, you only have to activate the corresponding environment.
+```
+$ venv\scripts\activate
+```
+  Either way, you should now be using your virtualenv (notice how the prompt of your shell has changed to show the active environment).
+  Now you can just enter the following command to get Flask activated in your virtualenv:
+```
+$ pip install Flask
+```
+
+And we're done! Let's proceed to our First Web App in Flask!
+
 ## First Web App in Flask
 
 asdfghjkl
+
+
+
+## References
